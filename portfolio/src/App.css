@@ -1,0 +1,22 @@
+.app-root {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.app-content {
+  position: relative;
+  z-index: 2;
+  /* Optional: for a little background blur effect */
+  /* backdrop-filter: blur(2px);  */
+}
+
+.animated-background {
+  position: fixed; /* or absolute, depending on your effect */
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: auto; /* So clicks go through */
+}

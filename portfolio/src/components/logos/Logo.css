@@ -1,0 +1,17 @@
+.logo-container {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 10;
+  background: rgba(0,0,0,0.5); /* Optional: soft background */
+  border-radius: 14px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 32px 0 #0002;
+}
+.logo-img {
+  height: 100px;
+  width: auto;
+  display: block;
+}

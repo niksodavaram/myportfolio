@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: frontend_nginx
+    ports:
+      - "3000:80" # Map Nginx to serve on port 3000
+    volumes:
+      - ./build:/usr/share/nginx/html # Serve the React build folder
+    depends_on:
+      - build
+
+  build:
+    image: node:16
+    container_name: frontend_build
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    command: sh -c "npm install && npm run build"

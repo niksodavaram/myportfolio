@@ -1,0 +1,69 @@
+/* Container Styling */
+.projects-container {
+  padding: 2rem;
+  background: hsl(206, 26%, 16%); /* Matches main page background */
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ff8c42; /* Orange Color */
+}
+
+/* Table Wrapper */
+.projects-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: #1a1a2e; /* Dark table background */
+}
+
+/* Header Styling */
+th {
+  padding: 1rem;
+  background: #ff8c42; /* Orange header */
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid #333;
+}
+
+/* Body Styling */
+td {
+  padding: 1rem;
+  text-align: left;
+  color: #d3d3d3;
+  border: 1px solid #333;
+  background: #1f4068; /* Slightly lighter than the background */
+}
+
+/* Hover Effect */
+tr:hover {
+  background: #ff8c42; /* Orange hover */
+  color: #000; /* Black text on hover */
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}
